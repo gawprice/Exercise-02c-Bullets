@@ -8,7 +8,7 @@ var creating = false
 func _ready():
 	randomize()
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if get_child_count() <= 1 and not creating:
 		$Timer.start()
 		creating = true
